@@ -6,8 +6,9 @@ Esta é uma API RESTful desenvolvida com **TypeScript** e **Express**, que permi
 
 ## 📁 Estrutura de Pastas
 
-A API segue o padrão de **Clean Architecture simplificado**, separando responsabilidades por camadas:
+A API segue o padrão de **Clean Architecture**, separando responsabilidades por camadas:
 
+```
 ├── src
 │   ├── controllers/
 │   └── services/
@@ -16,10 +17,9 @@ A API segue o padrão de **Clean Architecture simplificado**, separando responsa
 │   ├── storage/
 │   └── index.ts/
 
-
+```
 ---
-
-## 🚀 Tecnologias Utilizadas
+### 🚀 Tecnologias Utilizadas
 
 - [Node.js](https://nodejs.org/)
 - [Express](https://expressjs.com/)
@@ -29,7 +29,7 @@ A API segue o padrão de **Clean Architecture simplificado**, separando responsa
 
 ---
 
-## 🔧 Como Rodar o Projeto
+### 🔧 Como Rodar o Projeto
 
 1. Clone o repositório:
    ```bash
