@@ -8,13 +8,13 @@ Esta é uma API RESTful desenvolvida com **TypeScript** e **Express**, que permi
 
 A API segue o padrão de **Clean Architecture simplificado**, separando responsabilidades por camadas:
 
-src/
-├── controllers/
-├── services/ 
-├── models/ 
-├── routes/
-├── storage/ 
-└── index.ts/
+├── src
+│   ├── controllers/
+│   └── services/
+│   ├── models/
+│   └── routes/
+│   ├── storage/
+│   └── index.ts/
 
 
 ---
