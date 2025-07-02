@@ -29,6 +29,16 @@ src/
 
 ---
 
+
+## 📸 Exemplos de Testes
+
+### ✅ Teste com Thunder Client - PUT Update Task
+  ![POST Task](test-images/post.task.jpeg)
+
+### ✅ Teste com Thunder Client - DELETE Task
+  ![GET Task](test-images/get.task.jpeg)
+
+
 ## 🔧 Como Rodar o Projeto
 
 1. Clone o repositório:
