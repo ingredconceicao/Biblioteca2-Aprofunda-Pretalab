@@ -36,7 +36,7 @@ A API segue o padrão de **Clean Architecture**, separando responsabilidades por
   ![POST Task](./API/src/images/post.task.jpeg)
 
 ### ✅ Teste com Thunder Client - GET Task
-  ![GET Task](./API/src/images/post.task.jpeg)
+  ![GET Task](./API/src/images/get.task.jpeg)
 
 
 ### 🔧 Como Rodar o Projeto
