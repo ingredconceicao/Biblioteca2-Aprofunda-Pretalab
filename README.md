@@ -32,10 +32,10 @@ A API segue o padrão de **Clean Architecture**, separando responsabilidades por
 
 ## 📸 Exemplos de Testes
 
-### ✅ Teste com Thunder Client - PUT Update Task
+### ✅ Teste com Thunder Client - POST Update Task
   ![POST Task](./API/src/images/post.task.jpeg)
 
-### ✅ Teste com Thunder Client - DELETE Task
+### ✅ Teste com Thunder Client - GET Task
   ![GET Task](./API/src/images/post.task.jpeg)
 
 
