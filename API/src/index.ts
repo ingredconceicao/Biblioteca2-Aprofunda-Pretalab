@@ -1,14 +1,20 @@
-import express from "express";
-import bookRoutes from "./routes/bookRoutes";
+import express from 'express';
+import bookRoutes from './routes/bookRoutes';
 
 const app = express();
-const PORT = 3000;
-
 app.use(express.json());
-app.use("/api", bookRoutes);
+app.use('/books', bookRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+export default app;
+
+if (require.main === module) {
+  app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000');
+  });
+}
+
+
+
+
 
 
