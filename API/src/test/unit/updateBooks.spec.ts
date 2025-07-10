@@ -21,6 +21,6 @@ const updateRes = await request(app)
   .send({ title: 'O Hobbit - Editado' });
 
 expect(updateRes.status).toBe(200);
-expect(updateRes.body.message).toContain('atualizado');
+expect(updateRes.body.message).toContain('editado');
   });
 });

@@ -1,7 +1,7 @@
 import bookService from '../../services/bookService';
 import BookStorage from '../../storage/bookStorage';
 
-describe('POST bibliotecaServices', () => {
+describe('POST bookServices', () => {
   beforeEach(() => {
     BookStorage.books = [];
   });
@@ -14,7 +14,7 @@ describe('POST bibliotecaServices', () => {
       exemplaryQuantity: 5,
       author: 'Baek Sehee',
     });
-    expect(BookStorage.books).toHaveLength(1);
+    expect(BookStorage.getAll()).toHaveLength(1);
     expect(created.id).toBeTruthy();
     expect(created.author).toBe('Baek Sehee');
     expect(created).toEqual(expect.objectContaining({

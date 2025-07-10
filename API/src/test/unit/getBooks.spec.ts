@@ -15,7 +15,7 @@ describe('Get Books', () => {
       author: 'Tolkien',
     });
 
-     expect(BookStorage.books.length).toBe(1);
+     expect(BookStorage.getAll().length).toBe(1);
     
       const listBook = bookService.getAllBooks();
     
