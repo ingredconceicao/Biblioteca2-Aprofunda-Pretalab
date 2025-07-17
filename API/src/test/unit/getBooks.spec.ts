@@ -7,7 +7,7 @@ describe('Get Books', () => {
   });
 
   it('deve listar todos os livros', () => {
-    bookService.createBook({
+    bookService.listBook({
       title: 'O Hobbit',
       bookGenres: 'Fantasia',
       status: 'Disponível',

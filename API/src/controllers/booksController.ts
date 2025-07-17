@@ -13,7 +13,7 @@ export const createPost = (req: Request, res: Response): void => {
   });
 
   res.status(201).json({
-    message: `New book, ${newBook.title}, created!!`,
+    message: `Novo livro, ${newBook.title}, criado!!`,
     id: newBook.id,
   });
 };

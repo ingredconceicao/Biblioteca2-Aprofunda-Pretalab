@@ -10,7 +10,7 @@ const router = Router();
 
 router.post('/', createPost);
 router.get('/', listPosts);
-router.put('/:id', updatePost);
+router.patch('/:id', updatePost);
 router.delete('/:id', deletePost);
 
 export default router;
