@@ -10,13 +10,15 @@ O projeto segue os princípios da **Clean Architecture**, separando responsabili
 
 ```
 ├── src
-│ ├── controllers/ 
-│ ├── services/ 
-│ ├── models/ 
-│ ├── routes/
-│ ├── storage/ 
-│ ├── factories/ 
-│ └── index.ts 
+│   ├── app/controllers/
+│   ├── config/
+│   ├── core/
+│   ├── infra/
+│   ├── shared/
+│   ├── test/
+│   └── index.ts
+│   └── main.ts
+
 ```
 
 ---
@@ -63,7 +65,6 @@ Listar livros (GET /books)
 Atualizar livro (PUT /books/:id)
 
 Excluir livro (DELETE /books/:id)
-
 ## 📸 Exemplos de Testes
 
 ### ✅ Teste com Thunder Client - POST Update Task
