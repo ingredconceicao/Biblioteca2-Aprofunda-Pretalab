@@ -1,5 +1,5 @@
 import request from "supertest";
-import app from "../../index";
+import app from "../../main";
 
 describe('Update Book', () => {
   it('deve atualizar o título do livro', async () => {

@@ -1,5 +1,5 @@
 import request from "supertest";
-import app from "../../index";
+import app from "../../main";
 import BookStorage from "../../storage/bookStorage";
 
 describe('Create Book', () => {
