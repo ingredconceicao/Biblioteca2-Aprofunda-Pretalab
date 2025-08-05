@@ -17,7 +17,6 @@ export default class AuthController {
 
 
 /*
-// src/core/usecases/users/AuthUser.ts
 import { AuthUser } from "../../src/core/usecases/users/AuthUser";
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
