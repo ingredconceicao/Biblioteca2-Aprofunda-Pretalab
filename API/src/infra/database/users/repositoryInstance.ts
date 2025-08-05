@@ -1,3 +1,3 @@
-import { MongoUserRepository } from '../database/mongoUserRepository';
+import { MongoUserRepository } from '../../database/users/mongoUserRepository';
 
 export const userRepository = new MongoUserRepository;

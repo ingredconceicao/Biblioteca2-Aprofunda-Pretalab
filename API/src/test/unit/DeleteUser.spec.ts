@@ -1,6 +1,6 @@
 import { User } from "../../core/entities/User";
 import { DeleteUser } from "../../core/usecases/users/DeleteUser";
-import { InMemoryUserRepository } from "../../infra/database/inMemoryUserRepository";
+import { InMemoryUserRepository } from "../../infra/database/users/inMemoryUserRepository";
 
 describe("DeleteUser (UseCase)", () => {
   let userRepository: InMemoryUserRepository;

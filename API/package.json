@@ -2,6 +2,8 @@
   "name": "api",
   "version": "1.0.0",
   "scripts": {
+    "build":"tsc",
+    "start": "node dist/main.js",
     "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
     "test": "jest",
     "test:coverage": "jest --coverage"

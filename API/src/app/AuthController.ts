@@ -1,8 +1,8 @@
-/*import { Request, Response } from "express";
+import { Request, Response } from "express";
 import { AuthUser } from "../core/usecases/users/AuthUser";
 import { userRepository } from "../infra/database/users/mongoUserRepository";
 
-export class AuthController {
+export default class AuthController {
   async handle(req: Request, res: Response): Promise<Response> {
     const { email, password } = req.body;
     try {
@@ -13,9 +13,12 @@ export class AuthController {
       return res.status(401).json({ error: error.message });
     }
   }
-}*/
+}
 
+
+/*
 // src/core/usecases/users/AuthUser.ts
+import { AuthUser } from "../../src/core/usecases/users/AuthUser";
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
@@ -37,5 +40,4 @@ export class AuthUser {
 
     return token;
   }
-}
-
+}*/

@@ -1,12 +1,14 @@
 import { conectMongo } from '../src/infra/database/users/mongooseConection';
 import app from './infra/server/server';
-import { config } from './config/environment';
 import http from 'http';
+import { config } from './config/environment';
+
+
 
 const DEFAULT_PORT = config.port || 3000;
 
 async function getAvailablePort(startPort: number): Promise<number> {
-  const maxPort = startPort + 50; // tenta até 50 portas acima
+  const maxPort = startPort + 50; 
   for (let port = startPort; port <= maxPort; port++) {
     const isAvailable = await isPortAvailable(port);
     if (isAvailable) return port;

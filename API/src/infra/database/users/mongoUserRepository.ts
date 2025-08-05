@@ -7,6 +7,17 @@ export class MongoUserRepository implements UserRepository {
     return new User(doc.name, doc.login, doc.email, doc.password, doc._id.toString());
   }
 
+  async findByLogin(login: string) {
+  const doc = await userModel.findOne({ login });
+  return doc ? this.toEntity(doc) : null;
+}
+
+async getAll(): Promise<User[]> {
+  const docs = await userModel.find();
+  return docs.map(doc => this.toEntity(doc));
+}
+
+
   async save(user: User): Promise<User> {
     const doc = await userModel.create(user);
     return this.toEntity(doc);
@@ -21,7 +32,7 @@ export class MongoUserRepository implements UserRepository {
     const doc = await userModel.findOne({ _id: id });
     return doc ? this.toEntity(doc) : null;
   }
-
+/*
   async update(user: User) {
     const doc = await userModel.findByIdAndUpdate(
       user.id,
@@ -34,7 +45,13 @@ export class MongoUserRepository implements UserRepository {
       { new: true }
     );
     return doc ? this.toEntity(doc) : null;
-  }
+  }*/
+
+  async update(id: string, userData: Partial<User>): Promise<User | null> {
+  const doc = await userModel.findByIdAndUpdate(id, userData, { new: true });
+  return doc ? this.toEntity(doc) : null;
+}
+
 
   async delete(id: string) {
     await userModel.findOneAndDelete({ _id: id });

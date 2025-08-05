@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { CreatePostController } from "../../CreatePostController";
-import { GetAllWithUserController } from "../users/GetAllWithUserController";
-import { GetMyPostsController } from "../../GetMyPostsController";
-import { autenticar } from "../../../shared/middlewares/authMiddlewares";
+import { CreatePostController } from "../../app/CreatePostController";
+import { GetAllWithUserController } from "../../app/controllers/users/GetAllWithUserController";
+import { GetMyPostsController } from "../../app/GetMyPostsController";
+import { autenticar } from "../../shared/middlewares/authMiddlewares";
 
 const router = Router();
 const createPostController = new CreatePostController();
